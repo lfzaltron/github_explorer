@@ -7,7 +7,9 @@
     "plugin:react/recommended",
     "airbnb",
     //adicionado por mim \/
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -26,8 +28,6 @@
     "@typescript-eslint",
     //adicionado por mim \/
     "react-hooks",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
     "prettier"
   ],
   "rules": {
@@ -38,17 +38,17 @@
     "react/jsx-filename-extension": [1, {"extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
     "import/extensions":[
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never"
-      }
+     "error",
+     "ignorePackages",
+     {
+       "ts": "never"
+     }
     ]
   },
   //adicionado por mim \/
   "settings": {
-    "import/resolver": {
-      "typescript": {}
-    }
+   "import/resolver": {
+     "typescript": {}
+   }
   }
 }
